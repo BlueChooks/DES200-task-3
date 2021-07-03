@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dynamic Rainforest</title>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600&display=swap');
+
+            :root {
+                --shadow-colour: #5a8c79;
+                --shadow: 0 5px 10px 0 var(--shadow-colour);
+                --shadow-hover: 0 10px 10px 0 var(--shadow-colour);
+            }
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100vw;
+                height: 100vh;
+                background-image: linear-gradient(to right top, #fffded, #fffbf1, #fffaf8, #fffbfd, #fffdff, #fffdff, #fffeff, #fffeff, #fffdfe, #fffdfc, #fffdfa, #fffdf8);
+            }
+
+            a {
+                text-decoration: none;
+                /* color: #444; */
+            }
+
+            h3 {
+                background: -webkit-linear-gradient(#98ac7f, #8b9c8b, #849b99);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            img {
+                max-width: 200px;
+            }
+
+            .container {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin: auto;
+                width: 70%;
+                min-width: 600px;
+                border-radius: 30px;
+                padding: 5vh 5vw;
+                box-shadow: var(--shadow) inset;
+                background-image: linear-gradient(to right top, #c8e2a8, #c7e0ad, #c7dfb2, #c7ddb7, #c7dbbb, #c5dbbf, #c3dac3, #c3d9c7, #c0dacb, #bddad0, #bcdbd4, #bbdbd8);
+            }
+
+            .future-link {
+                position: relative;
+                top: 0px;
+                display: flex;
+                flex-direction: column;
+                /* width: 30%; */
+                height: 100%;
+                padding: 20px;
+                border-radius: 25px;
+                box-shadow: var(--shadow);
+                font-family: 'Montserrat', sans-serif;
+                transition: .2s;
+                background-color: #fff;
+                text-align: center;
+            }
+
+            .future-link:hover {
+                box-shadow: var(--shadow-hover);
+                top: -5px;
+                /* transform: translate(0px -5px); */
+            }
+
+            p {
+                width: 100%;
+                background-color: transparent;
+                padding: 20px 40px;
+                border-radius: 10px;
+                background-color: #fff;
+                margin-bottom: 5vh;
+                box-shadow: var(--shadow);
+                font-family: 'Montserrat', sans-serif;
+                color: #444;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <p>These futures are designed to be run at full-screen on a 3840x2160 monitor</p>
+            <a href="deforest.html">
+                <div class="future-link">
+                    <h3>Deforestation</h3>
+                    <img src="img/tree4.png" />
+                </div>
+            </a>
+    
+            <a href="reforest.html">
+                <div class="future-link">
+                    <h3>Reforestation</h3>
+                    <img src="img/city1.png" />
+                </div>
+            </a>
+    
+            <a href="harmony.html">
+                <div class="future-link">
+                    <h3>Harmony with Nature</h3>
+                    <img src="img/house2.png" />
+                </div>
+            </a>
+        </div>
+    </body>
+</html>

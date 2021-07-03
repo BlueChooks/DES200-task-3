@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dynamic Rainforest</title>
+
+        <link rel="stylesheet" href="style.css" />
+
+        <style>
+            :root {
+                --grid-width: 500px;
+                --grid-height: 5000px;
+
+                --cell-size: 40px;
+
+                --grow-duration: 10s;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="fader"></div>
+        <div id="overlay"></div>
+
+        <!-- development -->
+        <!-- <grid-container rows="30", cols="30" future="harmony"></grid-container> -->
+
+        <!-- production -->
+        <grid-container rows="55", cols="96", future="harmony"></grid-container>
+        
+        <script src="./elements/grid-cell.js"></script>
+        <script src="./elements/grid.js"></script>
+    </body>
+</html>
